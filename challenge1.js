@@ -4,6 +4,11 @@
  * - that just prints your name on the screen
  */
 
+function printName(personname) {
+  console.log(`Hello ${personname}`);
+}
+printName("Sundus");
+
 /**
  * Task 2:
  * Create a function named `printAge`
@@ -11,6 +16,11 @@
  * - and prints the age on the screen.
  * - Age = current year - birth
  */
+
+function printAge(birthyear) {
+  console.log(2023 - birthyear);
+}
+printAge(1994);
 
 /**
  * Task 3:
@@ -23,9 +33,28 @@
  * -- tr: it should print `Merhaba NAME`
  */
 
+function printHello(printName, language) {
+  if (language == "en") {
+    console.log(`- Hello ${printName}`);
+  } else if (language == "es") {
+    console.log(`Hola ${printName}`);
+  } else if (language == "fr") {
+    console.log(`-Bonjour ${printName}`);
+  } else if (language == "tr") {
+    console.log(`-Merhaba ${printName}`);
+  }
+}
+
+printHello("Sundus", "tr");
+
 /**
  * Task 4:
  * Create a function named `printMax`
  * - that takes 2 parameters as numbers
  * - should print out the bigger number
  */
+function printMax(num1, num2) {
+  console.log(Math.max(num1, num2));
+}
+
+printMax(10, 9);
